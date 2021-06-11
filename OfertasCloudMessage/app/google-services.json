@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "631747931114",
+    "firebase_url": "https://masterfirebase-f1e58-default-rtdb.firebaseio.com",
+    "project_id": "masterfirebase-f1e58",
+    "storage_bucket": "masterfirebase-f1e58.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631747931114:android:18b32ae8b38bbe40206093",
+        "android_client_info": {
+          "package_name": "com.barryzea.masterdetailcloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631747931114-kjp6g7snpaqdv2vs3dp5hea79vvtue1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLeZxkkRVSsbfoVuj9DRC7DXEO6yE-St8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631747931114-kjp6g7snpaqdv2vs3dp5hea79vvtue1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631747931114:android:2eadbaf2ab2b990e206093",
+        "android_client_info": {
+          "package_name": "com.barryzea.ofertascloudmessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631747931114-kjp6g7snpaqdv2vs3dp5hea79vvtue1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLeZxkkRVSsbfoVuj9DRC7DXEO6yE-St8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631747931114-kjp6g7snpaqdv2vs3dp5hea79vvtue1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
