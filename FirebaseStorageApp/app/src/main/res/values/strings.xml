@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FirebaseStorageApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="uploadText">Subir</string>
+    <string name="imagesTitle">Imágenes</string>
+    <string name="cameraTitle">Cámara</string>
+</resources>
