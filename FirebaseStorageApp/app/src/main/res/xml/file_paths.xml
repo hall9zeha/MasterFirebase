@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="my_images" path="Pictures" />
+
+    <!-- This is the path to save the photo, it must be configured. -->
+    <!-- This method provides files in the root directory of the external storage area of ​​the application. It corresponds to Context#getExternalFilesDir(String) -->
+    <!-- Path returned by Context.getExternalFilesDir(null): -->
+    <!--        eg:"/storage/emulated/0/Android/data/com.jph.simple/files"。-->
+    <external-files-path name="images" path="Pictures" />
+</paths>

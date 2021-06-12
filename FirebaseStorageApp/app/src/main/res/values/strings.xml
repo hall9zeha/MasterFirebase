@@ -6,4 +6,5 @@
     <string name="uploadText">Subir</string>
     <string name="imagesTitle">Imágenes</string>
     <string name="cameraTitle">Cámara</string>
+    <string name="shareImageText">buscar imagen</string>
 </resources>
