@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="16dp"
+        android:id="@+id/imageViewPhotoProfile"
+        android:layout_width="@dimen/dimenPhotoUser"
+        android:layout_height="@dimen/dimenPhotoUser"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="@color/colorPrimary"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ProgressBar
+        android:layout_marginTop="8dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarUpload"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        style="?android:progressBarStyleHorizontal"
+        app:layout_constraintStart_toStartOf="@id/imageViewPhotoProfile"
+        app:layout_constraintEnd_toEndOf="@id/imageViewPhotoProfile"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPhotoProfile"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProgress"
+        app:layout_constraintStart_toEndOf="@id/progressBarUpload"
+        app:layout_constraintTop_toTopOf="@id/progressBarUpload"
+        app:layout_constraintBottom_toBottomOf="@id/progressBarUpload"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textViewUserName"
+        style="@style/TextViewBase"
+        android:hint="@string/hintUserName"
+        app:layout_constraintTop_toBottomOf="@id/progressBarUpload"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        style="@style/TextViewBase"
+        android:hint="Correo"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName"/>
+    <TextView
+        android:id="@+id/textViewProvider"
+        style="@style/TextViewBase"
+
+        android:hint="Proveedor"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
