@@ -1,0 +1,2 @@
+rootProject.name = "RemoteConfigApp"
+include ':app'

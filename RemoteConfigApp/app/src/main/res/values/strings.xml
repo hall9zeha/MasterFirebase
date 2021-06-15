@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RemoteConfigApp</string>
+    <string name="title_activity_register_turn">FullscreenActivity</string>
+    <string name="dummy_button">Solicitar turno</string>
+    <string name="dummy_content">BIENVENIDO REGÍSTRESE Y ESPERE SU TURNO</string>
+</resources>
