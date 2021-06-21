@@ -15,8 +15,8 @@
     </style>
 
     <style name="Theme.InventarioFirebase.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
     </style>
 
     <style name="Theme.InventarioFirebase.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
