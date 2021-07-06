@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">InventarioFirebase</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="text_data">Nombre: \n Cantidad:</string>
+    <string name="data_text_view">%s \n(x%s)</string>
+    <string name="permission_denied_inventario">No tienes permiso para ver el inventario</string>
+    <string name="error_in_server">Error en el servidor</string>
+    <string name="remove_message_error">No tienes permiso para remover</string>
+    <string name="titleRemoveDialog">"Eliminar "</string>
+    <string name="msgRemoveItem">¿Quieres eliminar este producto?</string>
+    <string name="positiveMsg">Si</string>
+    <string name="negativeMsg">No</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_max_value">El valor debe ser menor a 1000</string>
+    <string name="error_default_add_product">No se pudo guardar error del servidor</string>
+    <string name="add_product_title">Añadir producto</string>
+    <string name="add_ok">Añadir</string>
+    <string name="add_cancel">Cancelar</string>
+    <string name="this_field_is_required">Este campo es requerido</string>
+    <string name="this_quantity_must_be_more">El valor debe ser mayor a 0</string>
+    <string name="btnSaveText">Guardar</string>
+    <string name="productTitleMain">Inventario</string>
+    <string name="product_added_success">producto actualizado, desea volver al listado?</string>
+    <string name="back_list">"Ir "</string>
+    <string name="error_product_add">No se agregó el producto, error</string>
+    <string name="tv_score_message">¿Qué te ha parecido el producto?</string>
+
+</resources>
