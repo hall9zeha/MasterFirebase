@@ -11,9 +11,11 @@ import com.barryzea.firechat.LoginModule.LoginPresenter;
 import com.barryzea.firechat.LoginModule.LoginPresenterClass;
 import com.barryzea.firechat.MainModule.view.MainActivity;
 import com.barryzea.firechat.R;
+import com.barryzea.firechat.common.Constants;
 import com.barryzea.firechat.databinding.ActivityLoginBinding;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.Arrays;
 
@@ -22,6 +24,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
 
     public static final int RC_SIGN_IN = 21;
     private LoginPresenter mPresenter;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
         mPresenter = new LoginPresenterClass(this);
         mPresenter.onCreate();
         mPresenter.getStatusAuth();
+        mFirebaseAnalytics= FirebaseAnalytics.getInstance(this);
 
 
     }
@@ -101,10 +105,18 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     public void showLoginSuccessFull(Intent data) {
         IdpResponse response= IdpResponse.fromResultIntent(data);
         String emailUser="";
+        String dominio;
         if(response != null){
             emailUser= response.getEmail();
+            if(emailUser!= null && emailUser.contains("@")) {
+                dominio=emailUser.substring(emailUser.indexOf("@") +1);
+                mFirebaseAnalytics.setUserProperty(Constants.EMAIL_PROVIDER, dominio);
+                mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.LOGIN, null);
+                //email_provider
+            }
         }
         Toast.makeText(this, getString(R.string.login_message_success, emailUser), Toast.LENGTH_LONG).show();
+
 
     }
 

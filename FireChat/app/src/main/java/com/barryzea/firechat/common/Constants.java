@@ -14,4 +14,8 @@ public class Constants {
     public static final String TOPIC="topic";
 
     public static final String SUCCESS = "success";
+    public static final String PARAM_CONTEXT = "param_context";
+    public static final String EVENT_ADD_FRIEND = "event_add_friend";
+    public static final String EVENT_FRIEND_DENIED = "event_friend_denied";
+    public static final String EMAIL_PROVIDER = "email_provider";
 }

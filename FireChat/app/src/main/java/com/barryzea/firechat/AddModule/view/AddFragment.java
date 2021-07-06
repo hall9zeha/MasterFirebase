@@ -19,8 +19,10 @@ import android.widget.Toast;
 import com.barryzea.firechat.AddModule.AddPresenter;
 import com.barryzea.firechat.AddModule.AddPresenterClass;
 import com.barryzea.firechat.R;
+import com.barryzea.firechat.common.Constants;
 import com.barryzea.firechat.common.utils.UtilsCommon;
 import com.barryzea.firechat.databinding.FragmentAddBinding;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class AddFragment extends DialogFragment implements DialogInterface.OnShowListener,AddView {
 
@@ -28,6 +30,7 @@ public class AddFragment extends DialogFragment implements DialogInterface.OnSho
     private FragmentAddBinding binding;
     private Button positiveButton;
     private AddPresenter mPresenter;
+    private FirebaseAnalytics mFirebaseAnalytics;
     public AddFragment() {
         // Required empty public constructor
         mPresenter= new AddPresenterClass(this);
@@ -46,6 +49,7 @@ public class AddFragment extends DialogFragment implements DialogInterface.OnSho
         builder.setView(binding.getRoot());
         AlertDialog dialog= builder.create();
         dialog.setOnShowListener(this);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(getActivity());
 
         return dialog;
     }
@@ -105,6 +109,9 @@ public class AddFragment extends DialogFragment implements DialogInterface.OnSho
     @Override
     public void friendAdded() {
         Toast.makeText(getActivity(), R.string.addFriend_message_request_dispatched, Toast.LENGTH_SHORT).show();
+        Bundle bundle= new Bundle();
+        bundle.putString(Constants.PARAM_CONTEXT, AddFragment.class.getName());
+        mFirebaseAnalytics.logEvent(Constants.EVENT_ADD_FRIEND, bundle);
         dismiss();
     }
 

@@ -40,10 +40,12 @@ import com.barryzea.firechat.MainModule.view.adapters.RequestAdapter;
 import com.barryzea.firechat.MainModule.view.adapters.UserAdapter;
 import com.barryzea.firechat.ProfileModule.view.ProfileActivity;
 import com.barryzea.firechat.R;
+import com.barryzea.firechat.common.Constants;
 import com.barryzea.firechat.common.pojo.User;
 import com.barryzea.firechat.common.utils.UtilsCommon;
 import com.barryzea.firechat.databinding.ActivityMainBinding;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements EventClickListene
     private User mUser;
 
     private MainPresenter mPresenter;
+    private FirebaseAnalytics mFirebaseAnalytics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements EventClickListene
         mPresenter=new MainPresenterClass(this);
         mPresenter.onCreate();
         mUser= mPresenter.getCurrentUser();
+        mFirebaseAnalytics= FirebaseAnalytics.getInstance(this);
         setUpViews();
         setUpToolbar();
         setUpAdapters();
@@ -324,6 +328,7 @@ public class MainActivity extends AppCompatActivity implements EventClickListene
     public void showRequestDenied() {
         Snackbar.make(findViewById(android.R.id.content), R.string.main_message_request_denied,
                 Snackbar.LENGTH_LONG).show();
+        mFirebaseAnalytics.logEvent(Constants.EVENT_FRIEND_DENIED, null);
     }
 
     @Override
