@@ -42,11 +42,17 @@ y presionando ```ctrl``` ```+``` ```enter```.
 También deberá agregar su propio archivo ```google-services.json``` generado en la configuración de su proyecto de firebase, dentro de la aplicación en android studio.
 
 Para manejar las notificaciones desde un servidor externo pero usando el servicio de firebase cloud messaging, se ha proporcionado dos archivos PHP 
-* [NiloRS](https://github.com/hall9zeha/NiloPartnerApp/blob/main/Extras/NiloRS.php)
-* [Notification](https://github.com/hall9zeha/NiloPartnerApp/blob/main/Extras/Notification.php)
+* [TextingRS](https://github.com/hall9zeha/MasterFirebase/blob/main/Extras/TextingRS.php)
+* [Notification](https://github.com/hall9zeha/MasterFirebase/blob/main/Extras/Notification.php)
  
 Estos archivos pueden ser utilizados y modificados a conveniencia, y cargados al servidor que utilice. Solo se debe agregar la llave de su proyecto de firebase.
 
+## Capturas de FireChat :framed_picture:
+
+<img src="https://github.com/hall9zeha/MasterFirebase/blob/main/Screenshots/Screenshot_20220303-130141~2.jpg" alt="drawing" width="300"/>|
+<img src="https://github.com/hall9zeha/MasterFirebase/blob/main/Screenshots/Screenshot_20220303-130149~2.jpg" alt="drawing" width="300"/>|
+<img src="https://github.com/hall9zeha/MasterFirebase/blob/main/Screenshots/Screenshot_20220303-130157~2.jpg" alt="drawing" width="300"/>|
+<img src="https://github.com/hall9zeha/MasterFirebase/blob/main/Screenshots/Screenshot_20220303-130222~2.jpg" alt="drawing" width="300"/>
 
 
 
