@@ -26,13 +26,13 @@ Proyecto comprendido por varias aplicaciones entre complejas y más sencillas, u
 
 ## Aplicaciones del proyecto :card_index_dividers:
 
-* FireChat
-* FirebaseStorageApp
-* InventarioFirestore
-* MasterDetailCloud
-* MultiLoginFirebase
-* OfertasCloudMessage
-* RemoteConfigApp
+* FireChat :iphone:
+* FirebaseStorageApp :iphone:
+* InventarioFirestore :iphone:
+* MasterDetailCloud :iphone:
+* MultiLoginFirebase :iphone:
+* OfertasCloudMessage :iphone:
+* RemoteConfigApp :iphone:
 
 ## Importante 
 
