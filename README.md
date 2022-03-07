@@ -22,7 +22,7 @@ Proyecto comprendido por varias aplicaciones entre complejas y más sencillas, u
 * [Circle Image View](https://github.com/hdodenhof/CircleImageView) -- Librería para convertir una Imageview normal en circular.
 * [Event Bus](https://github.com/greenrobot/EventBus) -- Librería para simplificar la comunicación entre componentes en android y java.
 * [Gson](https://github.com/google/gson) -- Librería para convertir objetos java en su correspondiente representación en JSON.
-* [MaterialShowCaseView] -- Librería diseñada para resaltar y mostrar partes específicas de las aplicaciones al usuario con una superposición distintiva y atractiva.
+* [MaterialShowCaseView](https://github.com/deano2390/MaterialShowcaseView) -- Librería diseñada para resaltar y mostrar partes específicas de las aplicaciones al usuario con una superposición distintiva y atractiva.
 
 ## Aplicaciones del proyecto :card_index_dividers:
 
